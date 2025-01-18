@@ -1,0 +1,55 @@
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.input-field {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-button {
+    background: linear-gradient(135deg, #34495e, #1abc9c);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+.input-button:hover {
+    background-color: #3700b3;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 16px;
+}
+
+.prev,
+.next {
+    background: linear-gradient(135deg, #34495e, #1abc9c);
+    padding: 1rem 2rem;
+    margin: 0 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page {
+    color: #fff;
+}

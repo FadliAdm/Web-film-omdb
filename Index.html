@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Fam Movie hub</title>
+
+        <!-- Css style -->
+        <link rel="stylesheet" href="Assets/css/style.css" />
+        <!-- Bootstraps css -->
+        <link rel="stylesheet" href="Assets/CSS/Bootstraps.css" />
+    </head>
+    <body class="bg-dark">
+        <nav class="navbar navbar-dark bg-secondary">
+            <div class="container">
+                <span class="navbar-brand mb-0 h1">Fad Movie Hub</span>
+            </div>
+        </nav>
+
+        <div class="input-group">
+            <input
+                type="text"
+                class="input-field input-keyword"
+                placeholder="Cari Film Anda"
+            />
+            <button class="input-button">Cari</button>
+        </div>
+
+        <div class="row movie-container mt-5"></div>
+
+        <div
+            class="modal fade"
+            id="movieDetailModal"
+            tabindex="-1"
+            aria-labelledby="movieDetailModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1
+                            class="modal-title fs-5"
+                            id="movieDetailModalLabel"
+                        ></h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pagination -->
+        <div class="pagination">
+            <div class="prev">Prev</div>
+            <div class="page">1</div>
+            <div class="next">Next</div>
+        </div>
+        <!-- pagination end -->
+
+        <script src="Assets/Js/script.js"></script>
+        <script src="Assets/Js/Bootstraps.js"></script>
+    </body>
+</html>
